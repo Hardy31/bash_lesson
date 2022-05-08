@@ -1,0 +1,84 @@
+sudo chmod +x ~/home/alex/Hardy/.my_skript/my_bush_2.sh
+
+
+
+alex@alexPC:~/Hardy$ cd .my_skript
+alex@alexPC:~/Hardy/.my_skript$ ls -l
+итого 12
+-rw-rw-r-- 1 alex alex 79 мая  7 22:50 my_bush_2.sh
+-rwxrwxr-x 1 alex alex 31 мая  5 23:10 my_first_script.sh
+-rw-rw-r-- 1 alex alex 56 мая  7 22:49 Памятка.txt
+alex@alexPC:~/Hardy/.my_skript$ sudo chmod +x my_bush_2.sh
+alex@alexPC:~/Hardy/.my_skript$ ls -l
+итого 12
+-rwxrwxr-x 1 alex alex 79 мая  7 22:50 my_bush_2.sh
+-rwxrwxr-x 1 alex alex 31 мая  5 23:10 my_first_script.sh
+-rw-rw-r-- 1 alex alex 56 мая  7 22:49 Памятка.txt
+alex@alexPC:~/Hardy/.my_skript$ 
+
+alex@alexPC:~/Hardy/.my_skript$ /home/alex/Hardy/.my_skript/my_first_script.sh
+Hello world
+
+
+alex@alexPC:~/Hardy/.my_skript$ /home/alex/Hardy/.my_skript/my_first_script.sh
+Hello world
+
+alex@alexPC:~/Hardy/.my_skript$ bash ~/Hardy/.my_skript/my_bush_NotX.sh
+Hello world нот Ч
+
+
+
+
+К уроку 2
+
+BASH		полный путь до исполняемого файла командной оболочки BSSH
+BASH_VERSION	версия BASH
+HOME		домашний каталог пользователя
+HOSTNAME	Имя компа
+RANDOM		случайное сисло от 0 до32 767
+OSTYPE		тип операционной системы 
+PWD		текущий каталог
+PSI		строка приглащения
+UID 		ID пользователя который запустил сценарий
+USER		Имя пользователя
+
+
+
+К уроку 3
+https://www.youtube.com/watch?v=P5UuSd5JW-k
+
+
+sudo chmod +x ~/home/alex/Hardy/.my_skript/my_bash_3.sh
+sudo chmod +x ~/Hardy/.my_skript/my_bash_3.sh
+
+echo -n "Вак вас зовут? "
+read Name
+echo "Очень приятно" $Name
+
+$1 $2 ... $9 $[10] $[11] ..
+
+
+
+sudo chmod +x ~/Hardy/.my_skript/my_bash_3.sh 5 3
+$0  -> /home/alex/Hardy/.my_skript/my_bash_3.sh
+echo $(($1 + $2)) -> 8
+
+
+
+Уроки по Bash скриптам часть 4: Условный оператор if
+https://www.youtube.com/watch?v=CMsLD-ks_RQ
+
+
+bash ~/Hardy/.my_skript/my_bash_4.sh
+
+lt меньше
+gt больше
+le меньше равно
+ge больше равно
+eq равно ( вместо ==)
+
+# Очень внимательно с пробелами  в местах где стоит ^  - [[^$age -ge 0^]]
+if [[ $age -ge 0 ]] && [[ $age -le 12 ]];  then
+	echo "вы еще ребенок"
+fi
+

@@ -82,3 +82,13 @@ if [[ $age -ge 0 ]] && [[ $age -le 12 ]];  then
 	echo "вы еще ребенок"
 fi
 
+
+
+
+echo "# bash_lesson" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Hardy31/bash_lesson.git
+git push -u origin main

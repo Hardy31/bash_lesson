@@ -1,7 +1,7 @@
 #!/bin/bash
 lesson="4"
 echo "Занятие №" $lesson
-# bash ~/Hardy/.my_skript/my_bash_4.sh
+# bash ~/Hardy/.my_script/my_bash_4.sh
 
 echo "Ваш возраст? "
 read age

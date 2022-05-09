@@ -2,34 +2,51 @@
 #!/bin/bash
 lesson="8"
 echo "Занятие №" $lesson
-# bash ~/Hardy/.my_skript/my_bash_8.sh
+# bash ~/Hardy/.my_script/my_bash_8.sh
+
+
+
+# Array=(2 34 565 8 Five пять !@$%^&*(*()  )  - Так выдаст ошибку! Но если последн ий элемент обернуть скобками ""
+
+Array=(2 34 565 8 Five пять "!@$%^&*(*()" "Элемент из четырех слов"  )
+
+#for  i in ${!Array[@]}; 
+#	do
+#		echo "Элемент - $i  = " ${Array[$i]}
+#	done
+
+ArrayK=()
+
+for ((j=0 ; j<10 ; j++));
+	do
+		ArrayK[j]=$((j*10-j))
+		#ArrayK[j]=$j*10-$j
+	done
+		
+echo ${ArrayK[@]}
 
 
 
 
 
-Array=(2 34 565 8)
-Array2=(34 3 engineer)
-
-echo ${Array[@]}
-echo ${Array2[2]}
-
-echo ${!Array2[@]}	# выводит индекс массива
-
-echo ${#Array[@]}	# выводит size массива
-
-echo ${#Array2[2]}	# выводит длинну 2  элемента  массива Array2
-
-Array2[2]=major		#перезаписали 2  элемента  массива Array2
-echo ${Array2[@]}
-
-Array2[5]=math		#добавили 5  элемента  массива Array2 (3 и 4  нет!!!)
-echo "Выводим  массив - " ${Array2[@]}
-echo "зразмер массива - " ${#Array[@]}
-echo "заполненные индексы массива - " ${!Array2[@]}	
 
 
 
-for  i in ${!Array2[@]}; do
-	echo "Элемент - $i  = " ${Array2[$i]}
-done
+
+size=${#ArrayK[@]}
+count=0
+
+while [ $count -lt $size ]
+	do
+		
+		echo "Элемент $count = " ${ArrayK[$count]}
+		# $count = $count + 1		- так не сработало
+		count=$(( $count+1 ))
+
+
+	done
+
+
+
+
+

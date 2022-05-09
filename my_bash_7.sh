@@ -2,7 +2,7 @@
 #!/bin/bash
 lesson="7"
 echo "Занятие №" $lesson
-# bash ~/Hardy/.my_skript/my_bash_7.sh
+# bash ~/Hardy/.my_skcipt/my_bash_7.sh
 
 Array=(2 34 565 8)
 Array2=(34 3 engineer)

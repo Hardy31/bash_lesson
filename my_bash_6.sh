@@ -2,7 +2,7 @@
 #!/bin/bash
 lesson="6"
 echo "Занятие №" $lesson
-# bash ~/Hardy/.my_skript/my_bash_6.sh
+# bash ~/Hardy/.my_script/my_bash_6.sh
 
 
 

@@ -1,29 +1,29 @@
-sudo chmod +x ~/home/alex/Hardy/.my_skript/my_bush_2.sh
+sudo chmod +x ~/home/alex/Hardy/.my_script/my_bush_2.sh
 
 
 
-alex@alexPC:~/Hardy$ cd .my_skript
-alex@alexPC:~/Hardy/.my_skript$ ls -l
+alex@alexPC:~/Hardy$ cd .my_script
+alex@alexPC:~/Hardy/.my_script$ ls -l
 итого 12
 -rw-rw-r-- 1 alex alex 79 мая  7 22:50 my_bush_2.sh
 -rwxrwxr-x 1 alex alex 31 мая  5 23:10 my_first_script.sh
 -rw-rw-r-- 1 alex alex 56 мая  7 22:49 Памятка.txt
-alex@alexPC:~/Hardy/.my_skript$ sudo chmod +x my_bush_2.sh
-alex@alexPC:~/Hardy/.my_skript$ ls -l
+alex@alexPC:~/Hardy/.my_script$ sudo chmod +x my_bush_2.sh
+alex@alexPC:~/Hardy/.my_script$ ls -l
 итого 12
 -rwxrwxr-x 1 alex alex 79 мая  7 22:50 my_bush_2.sh
 -rwxrwxr-x 1 alex alex 31 мая  5 23:10 my_first_script.sh
 -rw-rw-r-- 1 alex alex 56 мая  7 22:49 Памятка.txt
-alex@alexPC:~/Hardy/.my_skript$ 
+alex@alexPC:~/Hardy/.my_script$ 
 
-alex@alexPC:~/Hardy/.my_skript$ /home/alex/Hardy/.my_skript/my_first_script.sh
+alex@alexPC:~/Hardy/.my_script$ /home/alex/Hardy/.my_script/my_first_script.sh
 Hello world
 
 
-alex@alexPC:~/Hardy/.my_skript$ /home/alex/Hardy/.my_skript/my_first_script.sh
+alex@alexPC:~/Hardy/.my_script$ /home/alex/Hardy/.my_script/my_first_script.sh
 Hello world
 
-alex@alexPC:~/Hardy/.my_skript$ bash ~/Hardy/.my_skript/my_bush_NotX.sh
+alex@alexPC:~/Hardy/.my_script$ bash ~/Hardy/.my_script/my_bush_NotX.sh
 Hello world нот Ч
 
 
@@ -48,8 +48,8 @@ USER		Имя пользователя
 https://www.youtube.com/watch?v=P5UuSd5JW-k
 
 
-sudo chmod +x ~/home/alex/Hardy/.my_skript/my_bash_3.sh
-sudo chmod +x ~/Hardy/.my_skript/my_bash_3.sh
+sudo chmod +x ~/home/alex/Hardy/.my_script/my_bash_3.sh
+sudo chmod +x ~/Hardy/.my_script/my_bash_3.sh
 
 echo -n "Вак вас зовут? "
 read Name
@@ -59,8 +59,8 @@ $1 $2 ... $9 $[10] $[11] ..
 
 
 
-sudo chmod +x ~/Hardy/.my_skript/my_bash_3.sh 5 3
-$0  -> /home/alex/Hardy/.my_skript/my_bash_3.sh
+sudo chmod +x ~/Hardy/.my_script/my_bash_3.sh 5 3
+$0  -> /home/alex/Hardy/.my_script/my_bash_3.sh
 echo $(($1 + $2)) -> 8
 
 
@@ -69,7 +69,7 @@ echo $(($1 + $2)) -> 8
 https://www.youtube.com/watch?v=CMsLD-ks_RQ
 
 
-bash ~/Hardy/.my_skript/my_bash_4.sh
+bash ~/Hardy/.my_ckript/my_bash_4.sh
 
 lt меньше
 gt больше
